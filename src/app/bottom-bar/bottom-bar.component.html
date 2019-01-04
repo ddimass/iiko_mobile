@@ -1,0 +1,6 @@
+<mat-toolbar color="primary" class="bottom">
+   <a routerLink="/catalog" class="button" routerLinkActive="active"><mat-icon>menu</mat-icon>Меню</a>
+   <a routerLink="/profile" class="button" routerLinkActive="active"><mat-icon>person_outline</mat-icon>Профиль</a>
+    <a routerLink="/recycler" class="button" routerLinkActive="active"><mat-icon matBadgeOverlap="false" [matBadgeHidden]='catserv.recycler.length == 0' matBadgeSize="medium" matBadge={{catserv.recycler.length}} matBadgeColor="accent" matBadgePosition="above after">local_grocery_store</mat-icon>Корзина</a>
+  <div class="button"><mat-icon>call</mat-icon>Позвонить</div>
+</mat-toolbar>
