@@ -5,9 +5,11 @@
             <img *ngIf="product.images && product.images.length != 0" class="card-image" src="{{product.images[0].imageUrl}}" alt="Photo of a Shiba Inu">
           <div class="description">
              <p class="head"> {{product.name}} </p>
+             <div style="text-align: justify">
           <span class="body">
               {{product.description}}
-              </span><br>
+              </span>
+              </div>
               <button mat-raised-button color="accent" (click)=catserv.addtorecycler(product)>{{product.price}} руб.</button>
             </div>
           </div>

@@ -21,7 +21,7 @@ export class CatalogService {
 
   constructor(private http: HttpClient) { }
   iikoGetnomenclature() {
-    let url = environment.apiUrl + 'getMenu/';
+    let url = environment.apiUrl + 'iiko/getmenu/';
     this.http.get<any>(url).subscribe(resp => {this.products = resp['products']; this.groups = resp['groups']; this.loaded = true;});
   }
   orgSelect(orgs: Org[]) {
